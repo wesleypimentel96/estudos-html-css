@@ -1,0 +1,359 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Bellota';
+}
+
+html, body{
+    height: 100%;
+}
+
+/* CLASSES AUXILIARES */
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+.w100{
+    width: 100%;
+}
+
+.w50{
+    width: 50%;
+}
+/* ------------------------------------------- */
+
+/* ESTILIZAÇÃO HEADER */
+header.cabecalho1{
+
+    height: 40px;
+    padding: 10px 2%;
+    background-color: #fff3e0;
+}
+
+header.cabecalho1 p{
+    float: left;
+}
+
+
+header.cabecalho1 ul.list-contato{
+    float: right;
+    list-style-position: inside;
+}
+
+ul.list-contato li{
+    display: inline-block;
+    padding-right: 20px;
+}
+
+li img{
+    width: 16px;
+    position: relative;
+    top: 3px;
+}
+/* ------------------------------------ */
+header.cabecalho2{
+    background-color: #ffe0b2;
+    height: 70px;
+    padding: 12px 2%;
+}
+
+.logo1{
+    float: left;
+    width: 140px;
+    height: 40px;
+    background-image: url(../images/logo2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+/* ----------------------------------------------- */
+
+
+/* ESTILIZAÇÃO SECTION.BANNER */
+
+section.banner{
+    width: 100%;
+    height: 500px;
+    background-image: url(../images/banner.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section.banner .container{
+    height: 100%;
+}
+
+.box-atrativos{
+    width: 500px;
+    height: 400px;
+    background-color: rgba(135,206,250, 0.2);
+    margin-top: 50px;
+    float: left;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.box-atrativos h2{
+    color: white;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.box-atrativos ul{
+    list-style-position: inside;
+    display: inline-block;
+    text-align: left;
+    margin-top: 30px;
+    padding-left: 10px;
+}
+
+.box-atrativos ul li{
+    line-height: 60px;
+    font-size: 24px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.menu-gastronomia{
+    text-align: left;
+}
+
+.form-container{
+    float: right;
+    height: 100%;
+    width: 400px;
+    background-color: white;
+    border: 3px solid #bbdefb;
+
+}
+
+.form-container h2{
+    padding: 20px 20px;
+    background-color: #03a9f4 ;
+    color: white;
+}
+
+.form-container form{
+    width: 100%;
+    padding: 20px 20px;
+}
+
+form input[type=text]{
+    width: 100%;
+    line-height: 40px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+    box-shadow: 1px 1px 1px 1px #bbdefb;
+}
+
+form > p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+form input[type=submit]{
+    width: 100%;
+    line-height: 50px;
+    margin-top: 30px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    font-size: 30px;
+    background-color: #039be5;
+    border-bottom: 5px solid #0288d1;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+/* -------------------------------------------- */
+
+/*ESTILIZAÇÃO SECTION.CHAMADA */
+
+section.chamada{
+    padding: 40px 0;
+    background-color: #ffe0b2;
+    text-align: center;
+}
+
+section.chamada h2{
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.wrapper-atrativos{
+    display: flex;
+}
+
+.entreternimento{
+    width: 40%;
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.entreternimento h2{
+    font-size: 25px;
+}
+
+.entreternimento p{
+    text-align: justify;
+    max-width: 500px;
+    margin-top: 20px;
+    line-height: 25px;
+    font-size: 19px;
+}
+
+.img-lazer{
+    background-size: cover;
+    background-position: center;
+    width: 60%;
+    height: 350px;
+}
+/* ----------------------------------------------- */
+/* FOOTER.RODAPE1 */
+
+footer.rodape1{
+    text-align: center;
+    padding: 10px 0;
+    background-color: #03a9f4;
+}
+
+footer.rodape1 .logo-rodape{
+    width: 140px;
+    height: 40px;
+    background-image: url(../images/logo2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    
+}
+/* ---------------------------------------------------------- */
+
+/* FOOTER.RODAPE2 */
+
+footer.rodape2{
+    padding: 30px 0;
+    background-color: #039be5;
+}
+
+footer.rodape2 .container a{
+   color: black;
+   font-size: 20px;
+   text-decoration: none;
+}
+
+footer.rodape2 .contato-dev{
+    float: right;
+    padding-left: 30px;
+}
+
+footer.rodape2 .contato-dev p{
+    display: inline-block;
+    font-size: 15px;
+}
+
+footer.rodape2 .contato-dev img{
+    width: 16px;
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+}
+
+
+/* RESPONSIVO */
+
+
+
+@media screen and (max-width: 920px){
+    section.banner{
+        height: auto;
+        text-align: center;
+    }
+
+    .box-atrativos{
+        display: inline-block;
+        float: none;
+        margin-bottom: 10px;
+        
+    }
+
+    .form-container{
+        float: none;
+        display: inline-block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    header.cabecalho1{
+        display: none;
+    }
+
+    section.banner{
+        height: auto;
+        text-align: center;
+    }
+
+    .box-atrativos{
+        display: inline-block;
+        float: none;
+        margin-bottom: 10px;
+        
+    }
+
+    .form-container{
+        float: none;
+        display: inline-block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .wrapper-atrativos{
+        display: block;
+        padding: 0 10px;
+        margin-top: 20px;
+    }
+
+    .entreternimento{
+        width: 100%;
+        order: 0;
+    }
+    .entreternimento p{
+        max-width: none;
+    }
+
+    .img-lazer{
+        width: 100%;
+        order: 0;
+    }
+
+    footer.rodape2{
+        padding: 30px 10px;
+        
+    }
+
+    .contato-dev:nth-of-type(2){
+        margin-right: 40px;
+    }
+    
+}
+
+
+@media screen and (max-width: 500px){
+
+ 
+
+    .box-atrativos{
+        display: none;
+    }
+}
+
